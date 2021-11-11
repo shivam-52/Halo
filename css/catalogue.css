@@ -11,7 +11,7 @@ body{
   margin: 0;
   background-color: #0e1f53;
   font-family: 'Montserrat', sans-serif;
-  color: grey;
+  color: #d6d6d6;
 }
 
 h1{
@@ -19,6 +19,12 @@ h1{
   text-align: center;
   color: #d6d6d6;
   font-size: 3rem;
+}
+
+h2{
+  margin: 10px;
+  text-align: center;
+  font-size: 2rem;
 }
 
 ul{
@@ -43,9 +49,9 @@ td{
 }
 
 .game{
-  flex-basis: 40%;
+  flex-basis: 47%;
   text-align: center;
-  margin: 20px ;
+  margin: 40px 5px;
 }
 
 .game>a>figure{
@@ -67,9 +73,20 @@ td{
 }
 
 .vid{
-  width: 70%;
-  margin: 100px auto;
+  position: relative;
+  text-align: center;
 }
+
+.vid>iframe{
+  margin: 100px 20px 40px 20px;
+}
+
+.Summary{
+  width: 45%;
+  margin: 10px auto 50px auto;
+  text-align: justify;
+}
+
 
 .home-icon{
   height: 40px;
@@ -115,4 +132,12 @@ td{
   text-decoration: none;
   font-size: 1.4rem;
   color: #d6d6d6;
+}
+
+@media(max-width:980px){
+  .Summary{
+    width: 65%;
+    margin: 10px auto 50px auto;
+    text-align: justify;
+  }
 }
