@@ -12,11 +12,10 @@ body{
   background-color: #0e1f53;
   font-family: 'Montserrat', sans-serif;
   color: #d6d6d6;
+  text-align: center;
 }
 
-figcaption{
-  font-size: 2rem;
-}
+
 
 h1{
   margin: 0;
@@ -26,22 +25,38 @@ h1{
 }
 
 h2{
-  margin: 10px;
+  margin: 10px auto;
   text-align: center;
   font-size: 2rem;
 }
 
-ul{
-  list-style-type: none;
+
+.characters{
+  text-align: center;
+  width: 70%;
+  margin: 40px auto;
 }
 
-td{
+.char-img{
+  float: left;
+}
+
+.char-img>img{
+  background-color: #051428;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.game{
+  display: inline-block;
   border: 1px solid;
-  padding: 15px;
 }
 
-form{
-  margin: 30px;
+.game>p{
+  text-align: center;
+  margin-top: 50px;
+  padding: 50px;
 }
 
 .heading{
@@ -49,61 +64,6 @@ form{
   padding: 50px;
 }
 
-.game-container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.game{
-  flex-basis: 47%;
-  text-align: center;
-  margin: 40px 5px;
-}
-
-.game>a>figure{
-  height: 100%;
-}
-
-.game>a>figure>img{
-  object-fit: cover;
-  border: 1px solid white;
-  width: 100%;
-  height: 85%;
-}
-
-.Overview{
-  color: #d6d6d6;
-  text-align: center;
-  margin: auto;
-  width: 60%;
-}
-
-.vid{
-  position: relative;
-  text-align: center;
-}
-
-.vid>iframe{
-  margin: 100px 20px 40px 20px;
-}
-
-.Summary{
-  width: 45%;
-  margin: 10px auto 50px auto;
-  text-align: justify;
-}
-
-.feedback-table{
-  display: block;
-  text-align: left;
-}
-
-.feedback-td{
-  border: 0;
-  padding: 10px;
-}
 
 
 .home-icon{
@@ -153,9 +113,5 @@ form{
 }
 
 @media(max-width:980px){
-  .Summary{
-    width: 65%;
-    margin: 10px auto 50px auto;
-    text-align: justify;
-  }
+
 }
